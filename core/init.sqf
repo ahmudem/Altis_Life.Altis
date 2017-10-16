@@ -33,6 +33,7 @@ diag_log "::Life Client:: Setting up Eventhandlers";
 diag_log "::Life Client:: Eventhandlers completed";
 diag_log "::Life Client:: Setting up user actions";
 [] call life_fnc_setupActions;
+[] call life_fnc_cellPhoneCheck;
 
 diag_log "::Life Client:: User actions completed";
 diag_log "::Life Client:: Waiting for server functions to transfer..";

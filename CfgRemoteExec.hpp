@@ -68,6 +68,7 @@ class CfgRemoteExec {
         F(TON_fnc_clientGetKey,CLIENT)
         F(TON_fnc_clientMessage,CLIENT)
         F(TON_fnc_player_query,CLIENT)
+        F(life_fnc_setupCellPhone,CLIENT)//SQL Phone
 
         /* Server only functions */
         F(BIS_fnc_execVM,SERVER)
@@ -110,6 +111,9 @@ class CfgRemoteExec {
         F(TON_fnc_vehicleUpdate,SERVER)
         F(TON_fnc_handleBlastingCharge,SERVER)
         F(TON_fnc_houseGarage,SERVER)
+        F(DB_fnc_cellPhoneRequest,SERVER)//SQL Phone
+        F(DB_fnc_saveCellPhone,SERVER)//SQL Phone
+        F(DB_fnc_getRealTime,SERVER)//SQL Phone
 
         /* HeadlessClient only functions */
         F(HC_fnc_addContainer,HC)
@@ -144,6 +148,8 @@ class CfgRemoteExec {
         F(HC_fnc_wantedFetch,HC)
         F(HC_fnc_wantedProfUpdate,HC)
         F(HC_fnc_wantedRemove,HC)
+        F(HC_fnc_cellPhoneRequest,HC)//SQL Phone
+        F(HC_fnc_saveCellPhone,HC)//SQL Phone
 
         /* Functions for everyone */
         F(BIS_fnc_effectKilledAirDestruction,ANYONE)
