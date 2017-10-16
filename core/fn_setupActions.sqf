@@ -19,8 +19,12 @@ switch (playerSide) do {
         //Rob person
         life_actions pushBack (player addAction[localize "STR_pAct_RobPerson",life_fnc_robAction,"",0,false,false,"",'
         !isNull cursorObject && player distance cursorObject < 3.5 && isPlayer cursorObject && animationState cursorObject == "Incapacitated" && !(cursorObject getVariable ["robbed",false]) ']);
+        //seatbealt
+        life_actions pushBack (player addAction["<t color = '#009900'>Put on Seatbelt</t>",life_fnc_seatbelt,"",6,false,false,"",' !life_seatbelt && vehicle player != player ']);
+        life_actions pushBack (player addAction["<t color = '#ff3300'>Remove Seatbelt</t>",life_fnc_seatbelt,"",6,false,false,"",' life_seatbelt && vehicle player != player ']);
+
     };
-    
+
     //Cops
     case west: { };
     
