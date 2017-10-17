@@ -30,3 +30,4 @@
 #include "newsStation.hpp"
 #include "newsStation.hpp"
 #include "oldmessages.hpp"
+#include "placeables.hpp"

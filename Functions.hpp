@@ -153,7 +153,7 @@ class Life_Client_Core {
         class gangDeposit {};
         class gangWithdraw {};
         class garageLBChange {};
-        class impoundMenu {};
+        class impoundMenu {};  
         class progressBar {};
         class safeFix {};
         class safeInventory {};
@@ -168,6 +168,16 @@ class Life_Client_Core {
         class unimpound {};
         class vehicleGarage {};
         class wireTransfer {};
+    };
+
+    class CopPlaceables	{
+    	file = "core\cop\placeables";
+    	class placeablesInit {};
+    	class placeablesMenu {};
+    	class placeablesRemoveAll {};
+    	class placeablePlace {};
+    	class placeableCancel {};
+    	class placeablesPlaceComplete {};
     };
 
     class Functions {
