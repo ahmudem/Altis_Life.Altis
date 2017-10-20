@@ -17,3 +17,4 @@ StartProgress = true;
 
 //Custom Scrtips
 [] execVM "scripts\teargas.sqf";
+[] execVM "scripts\DynWeather.sqf";
