@@ -49,6 +49,7 @@ life_civ_position = [];
 life_markers = false;
 life_canpay_bail = true;
 life_seatbelt = false;
+airdrop_goingon = false;
 
 //Settings
 life_settings_enableNewsBroadcast = profileNamespace getVariable ["life_enableNewsBroadcast",true];

@@ -114,6 +114,7 @@ class CfgRemoteExec {
         F(DB_fnc_cellPhoneRequest,SERVER)//SQL Phone
         F(DB_fnc_saveCellPhone,SERVER)//SQL Phone
         F(DB_fnc_getRealTime,SERVER)//SQL Phone
+        F(TON_fnc_generateAirdrop,SERVER)//Airdrop
 
         /* HeadlessClient only functions */
         F(HC_fnc_addContainer,HC)
