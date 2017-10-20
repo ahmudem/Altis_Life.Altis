@@ -137,6 +137,12 @@ switch (_code) do {
         if (_shift && playerSide isEqualTo civilian && !isNull cursorObject && cursorObject isKindOf "Man" && isPlayer cursorObject && alive cursorObject && cursorObject distance player < 4 && speed cursorObject < 1) then {
             if ((animationState cursorObject) != "Incapacitated" && (currentWeapon player == primaryWeapon player || currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable ["restrained",false]) && !life_istazed && !life_isknocked) then {
                 [cursorObject] spawn life_fnc_knockoutAction;
+                //Take Phone Away
+                if("ItemRadio" in assignedItems cursorTarget) then {
+                  cursorTarget removeweapon "ItemRadio";
+                  hint "The cellphone of the person was placed on the ground.";
+                  _defenceplace1 = "Item_ItemRadio" createVehicle (player modelToWorld[0,0,0]);}
+                 else { hint "The person that you knock out have no cellphone!"};
             };
         };
     };

@@ -333,6 +333,7 @@ class Life_Client_Core {
         class wantedInfo {};
         class wantedList {};
         class wantedMenu {};
+        class physicalPhone {};
     };
 
     class Shops {
