@@ -1,9 +1,9 @@
 /*
     File: init.sqf
-    Author: 
-    
+    Author:
+
     Description:
-    
+
 */
 StartProgress = false;
 
@@ -13,3 +13,7 @@ if (hasInterface) then {
 [] execVM "KRON_Strings.sqf";
 
 StartProgress = true;
+
+
+//Custom Scrtips
+[] execVM "scripts\teargas.sqf";
