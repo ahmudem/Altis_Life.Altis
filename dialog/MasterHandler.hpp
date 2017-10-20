@@ -31,3 +31,5 @@
 #include "newsStation.hpp"
 #include "oldmessages.hpp"
 #include "placeables.hpp"
+#include "common_EditorWrapper.hpp"
+#include "market.hpp"

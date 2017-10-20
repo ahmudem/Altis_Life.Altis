@@ -153,7 +153,7 @@ class Life_Client_Core {
         class gangDeposit {};
         class gangWithdraw {};
         class garageLBChange {};
-        class impoundMenu {};  
+        class impoundMenu {};
         class progressBar {};
         class safeFix {};
         class safeInventory {};
@@ -229,6 +229,7 @@ class Life_Client_Core {
         class teleport {};
         class whereAmI {};
         class seatbelt {};
+        class randomRound {};
     };
 
     class Gangs {
@@ -384,6 +385,7 @@ class Life_Client_Core {
         class vInteractionMenu {};
     };
 
+    //Past this line is added in
     class CellPhone {
     		file = "core\cellphone";
     		class cellPhoneCheck {};
@@ -393,4 +395,21 @@ class Life_Client_Core {
     		class deleteMessage {};
     		class replyMessage {};
     };
+
+    class Market {
+  		file = "core\market";
+  		class openMarketView {};
+  		class refreshMarketView {};
+  		class marketShortView {};
+  		class marketBuy {};
+  		class marketSell {};
+  		class marketGetBuyPrice {};
+  		class marketGetSellPrice {};
+  		class marketconfiguration {};
+  		class marketReset {};
+  		class marketChange {};
+  		class marketGetRow {};
+  		class marketGetPriceRow {};
+  		class marketSetPriceRow {};
+  	};
 };
